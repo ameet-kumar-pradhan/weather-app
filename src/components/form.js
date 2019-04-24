@@ -1,17 +1,23 @@
 import React from 'react';
+import '../assets/fomantic/dist/semantic.min.css';
 
 const Form = props => (
 
-   <form onSubmit={props.loadWeather}>
-      <input type="text" name="city" placeholder="City" />
-      <input type="text" name="country" placeholder="Country" />
-      <button>
-         Get Weather
+   <form onSubmit={props.loadWeather} class="ui form">
+      <div class="ui input">
+         <input type="text" name="city" placeholder="City" />
+         <input type="text" name="country" placeholder="Country" />
+      </div>
+      <div>
+         <button class="ui primary button">
+            Get Weather
       </button>
-      <button type="reset">
-         Reset
+         <button class="ui button" type="reset">
+            Reset
       </button>
-   </form>
+      </div>
+
+   </form >
 
 )
 export default Form;

@@ -4,10 +4,12 @@
   "private": true,
   "homepage": "https://ryder007.github.io/weather-app/",
   "dependencies": {
+    "fomantic-ui": "^2.7.4",
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "semantic-ui-react": "^0.86.0"
   },
   "scripts": {
     "start": "react-scripts start",

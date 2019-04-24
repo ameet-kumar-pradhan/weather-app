@@ -2,8 +2,11 @@ import React from 'react';
 import Titles from './components/titles';
 import Form from './components/form';
 import Weather from './components/weather';
+import './assets/fomantic/dist/semantic.css';
+import { Container, Header } from 'semantic-ui-react';
 
 const api_key = "9228bd5801440681840cfcf7959dcd24";
+
 class App extends React.Component {
 
   state = {
@@ -40,17 +43,21 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <Titles />
-        <Form loadWeather={this.getWeather} />
-        <Weather
-          temperature={this.state.temperature}
-          city={this.state.city}
-          country={this.state.country}
-          humidity={this.state.humidity}
-          description={this.state.description}
-          error={this.state.error} />
-      </div>
+      <Container>
+        <div>
+          <Header>
+            <Titles />
+          </Header>
+          <Form loadWeather={this.getWeather} />
+          <Weather
+            temperature={this.state.temperature}
+            city={this.state.city}
+            country={this.state.country}
+            humidity={this.state.humidity}
+            description={this.state.description}
+            error={this.state.error} />
+        </div>
+      </Container>
     )
   }
 }
