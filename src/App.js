@@ -36,6 +36,7 @@ class App extends React.Component {
       })
     } else {
       this.setState({
+
         error: "Please input search values..."
       })
     }
