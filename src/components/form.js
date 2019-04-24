@@ -8,6 +8,9 @@ const Form = props => (
       <button>
          Get Weather
       </button>
+      <button type="reset">
+         Reset
+      </button>
    </form>
 
 )
