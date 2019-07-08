@@ -35,7 +35,6 @@ npm run test
 
 👤 **Ameet Pradhan**
 
-* Twitter: [@WeArerYDer](https://twitter.com/WeArerYDer)
 * Github: [@rYDer007](https://github.com/rYDer007)
 
 ## 🤝 Contributing
